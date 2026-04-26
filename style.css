@@ -1,0 +1,690 @@
+    :root {
+    --cream: #f7f3ee;
+    --sand: #e8dfd3;
+    --stone: #c4b5a5;
+    --dusk: #8b7b6b;
+    --earth: #5c4a3a;
+    --deep: #2e1f14;
+    --blue-mist: #b8c9d4;
+    --sage: #a8b5a0;
+    --rose-dust: #c9a89a;
+    --gold: #c9a84c;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--cream);
+    color: var(--deep);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(247, 243, 238, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--sand);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--earth);
+    letter-spacing: 0.05em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 0.2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: var(--dusk);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    background: var(--sand);
+    color: var(--earth);
+  }
+
+  /* HERO */
+  #inicio {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 4rem 6rem 6rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--dusk);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 6vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--deep);
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--earth);
+  }
+
+  .hero-author {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--dusk);
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    color: var(--earth);
+    max-width: 420px;
+    line-height: 1.9;
+    margin-bottom: 3rem;
+  }
+
+  .hero-divider {
+    width: 60px;
+    height: 1px;
+    background: var(--stone);
+    margin-bottom: 2rem;
+  }
+
+  .integrantes-title {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 0.8rem;
+  }
+
+  .integrantes-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .integrantes-list li {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    color: var(--earth);
+    letter-spacing: 0.03em;
+  }
+
+  .hero-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--sand) 0%, var(--stone) 100%);
+    overflow: hidden;
+  }
+
+  .hero-illustration {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .hero-quote {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 3rem;
+  }
+
+  .hero-quote blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    color: var(--deep);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .hero-quote cite {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--dusk);
+  }
+
+  /* INTRO SINOPSIS */
+  .sinopsis-section {
+    background: var(--deep);
+    padding: 6rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sinopsis-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .sinopsis-inner h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--sand);
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .sinopsis-inner p {
+    color: var(--stone);
+    font-size: 1rem;
+    line-height: 2;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .sinopsis-decoration {
+    position: absolute;
+    opacity: 0.05;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20rem;
+    color: var(--cream);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* TOPICOS */
+  .topico-section {
+    padding: 7rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .topico-section:nth-child(odd) {
+    background: var(--cream);
+  }
+
+  .topico-section:nth-child(even) {
+    background: #f0ebe4;
+  }
+
+  .topico-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .topico-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .topico-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: var(--sand);
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .topico-header-text h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: var(--earth);
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+  }
+
+  .topico-header-text .subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--stone);
+  }
+
+  .topico-illustration {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 3rem;
+    overflow: hidden;
+  }
+
+  /* CARDS GRID */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--sand);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .card.militar::before { background: var(--rose-dust); }
+  .card.nostalgia::before { background: var(--blue-mist); }
+  .card.herencia::before { background: var(--sage); }
+  .card.memoria::before { background: var(--gold); }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(46, 31, 20, 0.08);
+  }
+
+  .card-icon {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--earth);
+    margin-bottom: 0.8rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    color: var(--dusk);
+    line-height: 1.8;
+  }
+
+  /* PERSONAJES */
+  .personajes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .personaje-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem 1.8rem;
+    border: 1px solid var(--sand);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .personaje-card:hover { transform: translateY(-3px); }
+
+  .personaje-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  .av-militar { background: rgba(201,168,154,0.2); }
+  .av-nostalgia { background: rgba(184,201,212,0.2); }
+  .av-herencia { background: rgba(168,181,160,0.2); }
+
+  .personaje-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: var(--earth);
+    margin-bottom: 0.3rem;
+  }
+
+  .personaje-role {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 0.8rem;
+  }
+
+  .personaje-card p {
+    font-size: 0.85rem;
+    color: var(--dusk);
+    line-height: 1.7;
+  }
+
+  /* QUOTE BLOCK */
+  .quote-block {
+    background: var(--deep);
+    border-radius: 20px;
+    padding: 3rem;
+    margin: 3rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .quote-block::before {
+    content: '"';
+    position: absolute;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12rem;
+    color: rgba(255,255,255,0.03);
+    top: -2rem;
+    left: 1rem;
+    line-height: 1;
+  }
+
+  .quote-block blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--sand);
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* TIEMPO TIMELINE */
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    gap: 0;
+    align-items: start;
+    margin: 3rem 0;
+  }
+
+  .timeline-col {
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    border: 1px solid var(--sand);
+  }
+
+  .timeline-col h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: var(--earth);
+    margin-bottom: 1rem;
+  }
+
+  .timeline-col p {
+    font-size: 0.88rem;
+    color: var(--dusk);
+    line-height: 1.8;
+  }
+
+  .timeline-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-top: 3rem;
+  }
+
+  .timeline-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--stone);
+  }
+
+  .timeline-line {
+    width: 1px;
+    height: 80px;
+    background: var(--stone);
+  }
+
+  /* NARRADORES */
+  .narrador-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .narrador-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: white;
+    border-radius: 14px;
+    padding: 1.5rem 2rem;
+    border: 1px solid var(--sand);
+  }
+
+  .narrador-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: var(--stone);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 40px;
+  }
+
+  .narrador-content h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    color: var(--earth);
+    margin-bottom: 0.4rem;
+  }
+
+  .narrador-content p {
+    font-size: 0.88rem;
+    color: var(--dusk);
+    line-height: 1.7;
+  }
+
+  /* NUCLEOS */
+  .nucleos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .nucleo-card {
+    border-radius: 16px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nucleo-card.n1 { background: rgba(201,168,154,0.12); border: 1px solid rgba(201,168,154,0.3); }
+  .nucleo-card.n2 { background: rgba(184,201,212,0.12); border: 1px solid rgba(184,201,212,0.3); }
+  .nucleo-card.n3 { background: rgba(168,181,160,0.12); border: 1px solid rgba(168,181,160,0.3); }
+  .nucleo-card.n4 { background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.2); }
+
+  .nucleo-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: var(--earth);
+    margin-bottom: 0.8rem;
+  }
+
+  .nucleo-card p {
+    font-size: 0.87rem;
+    color: var(--dusk);
+    line-height: 1.75;
+  }
+
+  /* MEMORIA SECTION */
+  #memoria {
+    background: var(--deep);
+    padding: 7rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #memoria .topico-inner { position: relative; z-index: 2; }
+
+  #memoria h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: var(--sand);
+    margin-bottom: 1rem;
+  }
+
+  #memoria .subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 3rem;
+    display: block;
+  }
+
+  .memoria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .memoria-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: background 0.3s ease;
+  }
+
+  .memoria-card:hover { background: rgba(255,255,255,0.08); }
+
+  .memoria-card .icon { font-size: 1.5rem; margin-bottom: 1rem; display: block; }
+
+  .memoria-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    color: var(--sand);
+    margin-bottom: 0.6rem;
+  }
+
+  .memoria-card p {
+    font-size: 0.87rem;
+    color: var(--stone);
+    line-height: 1.75;
+  }
+
+  .final-quote {
+    text-align: center;
+    padding: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 3rem;
+  }
+
+  .final-quote blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--sand);
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+  }
+
+  .final-quote cite {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--stone);
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--cream);
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid var(--sand);
+    font-size: 0.75rem;
+    color: var(--stone);
+    letter-spacing: 0.1em;
+  }
+
+  /* SVG ILLUSTRATIONS */
+  .illustration-wrapper {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    #inicio { grid-template-columns: 1fr; }
+    .hero-right { display: none; }
+    .hero-left { padding: 4rem 2rem; }
+    .timeline { grid-template-columns: 1fr; }
+    .timeline-center { display: none; }
+    nav { padding: 0 1rem; }
+    .nav-links { gap: 0; }
+    .nav-links a { padding: 0.4rem 0.5rem; font-size: 0.65rem; }
+    .topico-header { flex-direction: column; gap: 0.5rem; }
+    .topico-number { font-size: 3rem; }
+  }

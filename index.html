@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nadar de pie — Análisis Literario</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">Nadar de pie</span>
+  <ul class="nav-links">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#militar">Militar</a></li>
+    <li><a href="#nostalgia">Nostalgia</a></li>
+    <li><a href="#herencia">Herencia</a></li>
+    <li><a href="#tiempo">Tiempo</a></li>
+    <li><a href="#narradores">Narradores</a></li>
+    <li><a href="#nucleos">Núcleos</a></li>
+    <li><a href="#memoria">Memoria</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="inicio">
+  <div class="hero-left">
+    <p class="hero-tag" data-aos="fade-up" data-aos-delay="100">Análisis Literario · Literatura Argentina</p>
+    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+      <em>Nadar</em><br>de pie
+    </h1>
+    <p class="hero-author" data-aos="fade-up" data-aos-delay="300">Sandra Comino</p>
+    <p class="hero-desc" data-aos="fade-up" data-aos-delay="400">
+      Una novela sobre el derecho a saber, la obligación de recordar y las cicatrices que la guerra de Malvinas dejó en el cuerpo de una familia y de un país entero.
+    </p>
+    <div class="hero-divider" data-aos="fade-up" data-aos-delay="500"></div>
+    <p class="integrantes-title" data-aos="fade-up" data-aos-delay="550">Integrantes del grupo</p>
+    <ul class="integrantes-list" data-aos="fade-up" data-aos-delay="600">
+      <li>Beltramone Luana</li>
+      <li>Ferrero Gonzalo</li>
+      <li>Farias Francisco </li>
+      
+    </ul>
+  </div>
+  <div class="hero-right">
+    <svg class="hero-illustration" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+      <!-- Water waves background -->
+      <defs>
+        <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#b8c9d4" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="#e8dfd3" stop-opacity="0.3"/>
+        </linearGradient>
+        <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#8b9faa" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="#5c7080" stop-opacity="0.6"/>
+        </linearGradient>
+      </defs>
+      <!-- Sky -->
+      <rect width="600" height="800" fill="url(#skyGrad)"/>
+      <!-- Horizon clouds -->
+      <ellipse cx="150" cy="150" rx="120" ry="35" fill="white" opacity="0.3"/>
+      <ellipse cx="400" cy="100" rx="90" ry="25" fill="white" opacity="0.2"/>
+      <ellipse cx="500" cy="200" rx="70" ry="20" fill="white" opacity="0.25"/>
+      <!-- Birds (simple V shapes) -->
+      <path d="M80 80 Q90 70 100 80" stroke="#8b7b6b" stroke-width="1.5" fill="none" opacity="0.5"/>
+      <path d="M105 70 Q115 60 125 70" stroke="#8b7b6b" stroke-width="1.5" fill="none" opacity="0.5"/>
+      <path d="M200 50 Q210 40 220 50" stroke="#8b7b6b" stroke-width="1.2" fill="none" opacity="0.4"/>
+      <!-- Sea horizon -->
+      <rect x="0" y="420" width="600" height="380" fill="url(#waterGrad)"/>
+      <!-- Wave lines -->
+      <path d="M0 440 Q75 430 150 440 Q225 450 300 440 Q375 430 450 440 Q525 450 600 440" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+      <path d="M0 470 Q100 460 200 470 Q300 480 400 470 Q500 460 600 470" stroke="white" stroke-width="0.8" fill="none" opacity="0.2"/>
+      <path d="M0 500 Q80 490 160 500 Q240 510 320 500 Q400 490 480 500 Q540 510 600 500" stroke="white" stroke-width="0.8" fill="none" opacity="0.2"/>
+      <!-- Cross silhouette (Darwin cemetery) -->
+      <rect x="275" y="310" width="8" height="80" fill="#5c4a3a" opacity="0.4"/>
+      <rect x="255" y="330" width="48" height="7" fill="#5c4a3a" opacity="0.4"/>
+      <rect x="305" y="310" width="8" height="80" fill="#5c4a3a" opacity="0.35"/>
+      <rect x="285" y="330" width="48" height="7" fill="#5c4a3a" opacity="0.35"/>
+      <rect x="335" y="310" width="8" height="80" fill="#5c4a3a" opacity="0.3"/>
+      <rect x="315" y="330" width="48" height="7" fill="#5c4a3a" opacity="0.3"/>
+      <!-- Ground line -->
+      <path d="M0 390 Q150 380 300 390 Q450 400 600 390" stroke="#c4b5a5" stroke-width="2" fill="none" opacity="0.5"/>
+      <!-- Eucalyptus silhouette left -->
+      <path d="M50 420 L50 200 Q60 180 70 160 Q55 190 65 200 L65 420" fill="#8b9e80" opacity="0.25"/>
+      <ellipse cx="60" cy="180" rx="25" ry="60" fill="#8b9e80" opacity="0.2"/>
+      <!-- Eucalyptus right -->
+      <path d="M540 420 L540 220 Q550 190 560 170 Q545 200 555 210 L555 420" fill="#8b9e80" opacity="0.2"/>
+      <ellipse cx="548" cy="195" rx="22" ry="50" fill="#8b9e80" opacity="0.18"/>
+      <!-- Letter/envelope motif -->
+      <rect x="220" y="540" width="160" height="110" rx="8" fill="white" opacity="0.15"/>
+      <path d="M220 548 L300 600 L380 548" stroke="white" stroke-width="1.5" fill="none" opacity="0.2"/>
+      <!-- Plane silhouette (Dagger) -->
+      <path d="M380 280 L420 265 L415 278 L440 272 L415 282 L420 295 Z" fill="#5c4a3a" opacity="0.25"/>
+      <!-- Quote text decorative -->
+      <text x="300" y="750" text-anchor="middle" font-family="serif" font-style="italic" font-size="14" fill="#5c4a3a" opacity="0.5">Caminar en Malvinas es como nadar de pie…</text>
+    </svg>
+    <div class="hero-quote">
+      <blockquote data-aos="fade-left" data-aos-delay="400">
+        "No recordar<br>no es el camino."
+      </blockquote>
+      <cite data-aos="fade-left" data-aos-delay="500">Gabriela — Nadar de pie</cite>
+    </div>
+  </div>
+</section>
+
+<!-- SINOPSIS -->
+<section class="sinopsis-section">
+  <div class="sinopsis-inner">
+    <span class="sinopsis-decoration">∞</span>
+    <h2 data-aos="fade-up">Sobre la novela</h2>
+    <p data-aos="fade-up" data-aos-delay="100">
+      <em>Nadar de pie</em> narra el viaje de Mavi, una joven de diecisiete años, al pueblo de Maipú donde vivió su padre Nardo, piloto de la Fuerza Aérea muerto en Malvinas antes de saber que ella existía. A través de saltos temporales entre 1981-1982 y 1998, Comino construye una historia sobre la memoria, el duelo y la identidad.
+    </p>
+    <p data-aos="fade-up" data-aos-delay="200">
+      El libro articula tres tópicos centrales: el peso del entorno militar sobre las familias, la nostalgia y melancolía como formas de habitar la pérdida, y la herencia del dolor como transmisión generacional del trauma. Sobre todos ellos se tiende el arco mayor de la reivindicación de la memoria histórica argentina.
+    </p>
+  </div>
+</section>
+
+<!-- TÓPICO 1: ENTORNO MILITAR -->
+<section class="topico-section" id="militar">
+  <div class="topico-inner">
+    <div class="topico-header">
+      <div class="topico-number" data-aos="fade-right">01</div>
+      <div class="topico-header-text">
+        <p class="subtitle" data-aos="fade-up">Tópico I</p>
+        <h2 data-aos="fade-up" data-aos-delay="100">El entorno militar</h2>
+      </div>
+    </div>
+
+    <!-- Ilustración -->
+    <div class="illustration-wrapper" data-aos="fade-up">
+      <svg viewBox="0 0 800 180" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <!-- Crosses row -->
+        <line x1="400" y1="20" x2="400" y2="160" stroke="#c4b5a5" stroke-width="1"/>
+        <g opacity="0.6">
+          <rect x="96" y="50" width="5" height="60" fill="#8b7b6b"/>
+          <rect x="78" y="68" width="41" height="5" fill="#8b7b6b"/>
+          <rect x="196" y="50" width="5" height="60" fill="#8b7b6b" opacity="0.8"/>
+          <rect x="178" y="68" width="41" height="5" fill="#8b7b6b" opacity="0.8"/>
+          <rect x="296" y="50" width="5" height="60" fill="#8b7b6b" opacity="0.6"/>
+          <rect x="278" y="68" width="41" height="5" fill="#8b7b6b" opacity="0.6"/>
+          <rect x="504" y="50" width="5" height="60" fill="#8b7b6b" opacity="0.6"/>
+          <rect x="486" y="68" width="41" height="5" fill="#8b7b6b" opacity="0.6"/>
+          <rect x="604" y="50" width="5" height="60" fill="#8b7b6b" opacity="0.8"/>
+          <rect x="586" y="68" width="41" height="5" fill="#8b7b6b" opacity="0.8"/>
+          <rect x="704" y="50" width="5" height="60" fill="#8b7b6b"/>
+          <rect x="686" y="68" width="41" height="5" fill="#8b7b6b"/>
+        </g>
+        <!-- Ground line -->
+        <line x1="0" y1="115" x2="800" y2="115" stroke="#c4b5a5" stroke-width="1" opacity="0.5"/>
+        <!-- Plane -->
+        <path d="M370 30 L400 20 L395 32 L420 26 L395 36 L400 48 Z" fill="#8b7b6b" opacity="0.5"/>
+        <text x="400" y="155" text-anchor="middle" font-family="serif" font-size="11" fill="#8b7b6b" opacity="0.6" letter-spacing="3">C E M E N T E R I O   D E   D A R W I N</text>
+      </svg>
+    </div>
+
+    <!-- Personajes -->
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--earth);margin-bottom:1.5rem;" data-aos="fade-up">Personajes</h3>
+    <div class="personajes-grid">
+      <div class="personaje-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="personaje-avatar av-militar">🎖️</div>
+        <h4>Emilio</h4>
+        <p class="personaje-role">Coronel · Abuelo paterno de Gabriela</p>
+        <p>Encarna la institución en el hogar. Sus traslados constantes impiden que la familia eche raíces. Aplica la misma lógica instrumental a su carrera y a su familia. Frío, distante: cuando parte a la guerra solo le dice a Gabriela "cuidá a tu madre" sin abrazarla.</p>
+      </div>
+      <div class="personaje-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="personaje-avatar av-militar">🪖</div>
+        <h4>Joselina</h4>
+        <p class="personaje-role">Abuela materna · El negacionismo</p>
+        <p>Reproduce la lógica militar sin uniforme. Habla de la guerra con orgullo, borra a Nardo de la narrativa familiar, intenta casar a Gabriela cuando descubre el embarazo. Rígida, controladora, incapaz de reconocer el daño causado.</p>
+      </div>
+      <div class="personaje-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="personaje-avatar av-militar">✈️</div>
+        <h4>Nardo</h4>
+        <p class="personaje-role">Piloto · El joven atrapado</p>
+        <p>Elige volar por vocación, no por ideología. Es reconstruido solo a través del diario de guerra y los testimonios. Su muerte sin identificación oficial durante años es el símbolo más brutal de cómo el Estado trató a sus propios soldados.</p>
+      </div>
+      <div class="personaje-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="personaje-avatar av-militar">🦽</div>
+        <h4>Jorge</h4>
+        <p class="personaje-role">Excombatiente · El sobreviviente partido</p>
+        <p>Su pierna ausente es el archivo vivo de la guerra. Oscila entre la necesidad de contar y la imposibilidad de hacerlo sin quebrarse. Su testimonio ante Mavi desmitifica cualquier épica bélica con imágenes de hambre, frío y miedo real.</p>
+      </div>
+    </div>
+
+    <!-- Cards temas -->
+    <div class="cards-grid">
+      <div class="card militar" data-aos="fade-up" data-aos-delay="100">
+        <span class="card-icon">⏳</span>
+        <h3>El tiempo</h3>
+        <p>En los 80, el entorno militar gobierna el espacio doméstico. En el 98, ya no hay uniforme visible pero el Estado sigue administrando el olvido: restos sin identificar, ADN cancelado, verdad negada.</p>
+      </div>
+      <div class="card militar" data-aos="fade-up" data-aos-delay="150">
+        <span class="card-icon">📻</span>
+        <h3>Narrador y perspectiva</h3>
+        <p>Los comunicados de radio y titulares de diarios introducen la voz oficial, siempre optimista y alejada de la realidad. El contraste con los testimonios construye la crítica sin necesidad de enunciarla.</p>
+      </div>
+      <div class="card militar" data-aos="fade-up" data-aos-delay="200">
+        <span class="card-icon">🚉</span>
+        <h3>Núcleo narrativo clave</h3>
+        <p>La partida desde la estación de tren: madres que lloran, jóvenes asustados que no saben usar un arma, y el pueblo festejando. Todo el militarismo doméstico condensado en un gesto.</p>
+      </div>
+    </div>
+
+    <div class="quote-block" data-aos="fade-up">
+      <blockquote>"Galtieri quiere lavar su imagen con la sangre de nuestros jóvenes."</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- TÓPICO 2: NOSTALGIA -->
+<section class="topico-section" id="nostalgia">
+  <div class="topico-inner">
+    <div class="topico-header">
+      <div class="topico-number" data-aos="fade-right">02</div>
+      <div class="topico-header-text">
+        <p class="subtitle" data-aos="fade-up">Tópico II</p>
+        <h2 data-aos="fade-up" data-aos-delay="100">Nostalgia y melancolía</h2>
+      </div>
+    </div>
+
+    <div class="illustration-wrapper" data-aos="fade-up">
+      <svg viewBox="0 0 800 160" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <!-- Eucalyptus trees -->
+        <ellipse cx="100" cy="70" rx="18" ry="55" fill="#8b9e80" opacity="0.25"/>
+        <rect x="97" y="80" width="6" height="80" fill="#8b9e80" opacity="0.2"/>
+        <ellipse cx="160" cy="60" rx="14" ry="45" fill="#8b9e80" opacity="0.2"/>
+        <rect x="157" y="72" width="6" height="88" fill="#8b9e80" opacity="0.18"/>
+        <ellipse cx="640" cy="70" rx="18" ry="55" fill="#8b9e80" opacity="0.25"/>
+        <rect x="637" y="80" width="6" height="80" fill="#8b9e80" opacity="0.2"/>
+        <ellipse cx="700" cy="60" rx="14" ry="45" fill="#8b9e80" opacity="0.2"/>
+        <rect x="697" y="72" width="6" height="88" fill="#8b9e80" opacity="0.18"/>
+        <!-- Letter/envelope -->
+        <rect x="330" y="40" width="140" height="95" rx="6" fill="none" stroke="#c4b5a5" stroke-width="1.5"/>
+        <path d="M330 46 L400 85 L470 46" stroke="#c4b5a5" stroke-width="1.5" fill="none"/>
+        <!-- Lines inside letter -->
+        <line x1="350" y1="100" x2="450" y2="100" stroke="#e8dfd3" stroke-width="1"/>
+        <line x1="350" y1="112" x2="430" y2="112" stroke="#e8dfd3" stroke-width="1"/>
+        <!-- Bottle -->
+        <path d="M500 60 Q495 55 497 45 L503 45 Q505 55 500 60 L495 130 Q495 135 500 135 Q505 135 505 130 Z" fill="none" stroke="#b8c9d4" stroke-width="1.5"/>
+        <ellipse cx="500" cy="90" rx="6" ry="2" fill="#b8c9d4" opacity="0.3"/>
+        <!-- Water waves at bottom -->
+        <path d="M0 145 Q100 138 200 145 Q300 152 400 145 Q500 138 600 145 Q700 152 800 145" stroke="#b8c9d4" stroke-width="1" fill="none" opacity="0.5"/>
+        <path d="M0 155 Q100 148 200 155 Q300 162 400 155 Q500 148 600 155 Q700 162 800 155" stroke="#b8c9d4" stroke-width="0.7" fill="none" opacity="0.3"/>
+      </svg>
+    </div>
+
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--earth);margin-bottom:1.5rem;" data-aos="fade-up">Personajes</h3>
+    <div class="personajes-grid">
+      <div class="personaje-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="personaje-avatar av-nostalgia">🌿</div>
+        <h4>Gabriela</h4>
+        <p class="personaje-role">La nostalgia corrosiva</p>
+        <p>Añora a Nardo, a Maipú, a una vida interrumpida. Hierve hojas de eucalipto en Buenos Aires para reproducir el olor del pueblo. Ese gesto condensa toda su pérdida: no perdió solo a un hombre, perdió un mundo entero.</p>
+      </div>
+      <div class="personaje-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="personaje-avatar av-nostalgia">🚲</div>
+        <h4>Mateo</h4>
+        <p class="personaje-role">La melancolía serena</p>
+        <p>Guarda la bolsa de Antonia como si fuera insustituible, sale en bicicleta como siempre, conserva los recortes. No se rinde al dolor sino que lo integra con dignidad. Su soledad se le nota en el rostro pero no lo vence.</p>
+      </div>
+      <div class="personaje-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="personaje-avatar av-nostalgia">📝</div>
+        <h4>Mavi</h4>
+        <p class="personaje-role">El vacío heredado</p>
+        <p>No extraña algo que tuvo sino algo que nunca conoció. Su padre es un fantasma construido por relatos ajenos. Esa ausencia origina un vacío que ella misma distingue del dolor, y que intenta llenar a través de la escritura.</p>
+      </div>
+      <div class="personaje-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="personaje-avatar av-nostalgia">👁️</div>
+        <h4>Sara</h4>
+        <p class="personaje-role">La melancolía del testigo</p>
+        <p>Estuvo presente en todos los momentos decisivos. Sostuvo a Gabriela durante años, vio partir a Jorge y a Nardo. Carga con la melancolía de quien sobrevivió a una historia que no era suya pero la atravesó completamente.</p>
+      </div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card nostalgia" data-aos="fade-up" data-aos-delay="100">
+        <span class="card-icon">⏰</span>
+        <h3>El tiempo</h3>
+        <p>En los 80 hay amor y urgencia, no nostalgia aún. En el 98, dieciséis años de ausencia la convirtieron en una arquitectura emocional que organiza toda la vida de Gabriela y dentro de la cual Mavi creció sin entenderla.</p>
+      </div>
+      <div class="card nostalgia" data-aos="fade-up" data-aos-delay="150">
+        <span class="card-icon">✍️</span>
+        <h3>Narrador y perspectiva</h3>
+        <p>Las cartas de Mavi a Nardo son el espacio narrativo de la nostalgia. Escribir para alguien que no puede leer es ya en sí mismo una imagen de la melancolía. El narrador observa sin comentar: el dolor es tan cotidiano que no necesita ser explicado.</p>
+      </div>
+      <div class="card nostalgia" data-aos="fade-up" data-aos-delay="200">
+        <span class="card-icon">📔</span>
+        <h3>Núcleo narrativo clave</h3>
+        <p>La entrega del diario de guerra: por primera vez Mavi tiene algo con la letra de su padre. Y la noche junto al fuego bajo los eucaliptos, donde llora por primera vez frente a alguien y Ernesto simplemente la abraza.</p>
+      </div>
+    </div>
+
+    <div class="quote-block" data-aos="fade-up">
+      <blockquote>"Prefiero creer que me ves desde algún lugar, aunque lo dudo."</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- TÓPICO 3: HERENCIA DEL DOLOR -->
+<section class="topico-section" id="herencia">
+  <div class="topico-inner">
+    <div class="topico-header">
+      <div class="topico-number" data-aos="fade-right">03</div>
+      <div class="topico-header-text">
+        <p class="subtitle" data-aos="fade-up">Tópico III</p>
+        <h2 data-aos="fade-up" data-aos-delay="100">Herencia del dolor</h2>
+      </div>
+    </div>
+
+    <div class="illustration-wrapper" data-aos="fade-up">
+      <svg viewBox="0 0 800 160" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <!-- Family tree / connection lines -->
+        <circle cx="400" cy="30" r="18" fill="none" stroke="#a8b5a0" stroke-width="1.5"/>
+        <text x="400" y="35" text-anchor="middle" font-size="16" fill="#a8b5a0">♀</text>
+        <line x1="400" y1="48" x2="400" y2="75" stroke="#a8b5a0" stroke-width="1" stroke-dasharray="3,3"/>
+        <line x1="400" y1="75" x2="280" y2="75" stroke="#a8b5a0" stroke-width="1"/>
+        <line x1="400" y1="75" x2="520" y2="75" stroke="#a8b5a0" stroke-width="1"/>
+        <line x1="280" y1="75" x2="280" y2="92" stroke="#a8b5a0" stroke-width="1"/>
+        <line x1="520" y1="75" x2="520" y2="92" stroke="#a8b5a0" stroke-width="1"/>
+        <circle cx="280" cy="108" r="16" fill="none" stroke="#a8b5a0" stroke-width="1.5" opacity="0.8"/>
+        <text x="280" y="113" text-anchor="middle" font-size="14" fill="#a8b5a0" opacity="0.8">♀</text>
+        <circle cx="520" cy="108" r="16" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.7"/>
+        <text x="520" y="113" text-anchor="middle" font-size="14" fill="#c9a84c" opacity="0.7">♂</text>
+        <text x="400" y="22" text-anchor="middle" font-size="9" fill="#8b7b6b" opacity="0.5" letter-spacing="2">GABRIELA</text>
+        <text x="280" y="140" text-anchor="middle" font-size="9" fill="#8b7b6b" opacity="0.5" letter-spacing="2">MAVI</text>
+        <text x="520" y="140" text-anchor="middle" font-size="9" fill="#8b7b6b" opacity="0.5" letter-spacing="2">NARDO</text>
+        <!-- Arrow indicating inheritance -->
+        <path d="M400 48 L400 48" stroke="#a8b5a0" stroke-width="1"/>
+        <!-- Decorative waves -->
+        <path d="M0 155 Q200 145 400 155 Q600 165 800 155" stroke="#c4b5a5" stroke-width="0.8" fill="none" opacity="0.4"/>
+      </svg>
+    </div>
+
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--earth);margin-bottom:1.5rem;" data-aos="fade-up">Personajes</h3>
+    <div class="personajes-grid">
+      <div class="personaje-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="personaje-avatar av-herencia">🌱</div>
+        <h4>Mavi</h4>
+        <p class="personaje-role">La heredera involuntaria</p>
+        <p>Recibió la ausencia de Nardo, el duelo de Gabriela y el silencio de Joselina como herencia. Aprendió a no llorar, a hablar de su vida como si fuera la de otra. Su bronca hacia su madre es la misma impotencia que Gabriela sintió ante la guerra.</p>
+      </div>
+      <div class="personaje-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="personaje-avatar av-herencia">💔</div>
+        <h4>Gabriela</h4>
+        <p class="personaje-role">La carga doble</p>
+        <p>Hereda el estigma de ser hija de un militar y la pérdida de Nardo. Desarrolla mecanismos de autocastigo: no come cuando algo la afecta, acumula fotografías compulsivamente. Su dolor terminó por deprimirla.</p>
+      </div>
+      <div class="personaje-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="personaje-avatar av-herencia">🔇</div>
+        <h4>Joselina</h4>
+        <p class="personaje-role">La herencia del negacionismo</p>
+        <p>Cubre el dolor en lugar de transmitirlo. Borra a Nardo, intenta casar a Gabriela, se mudan a Buenos Aires. Su "protección" es una forma de violencia: priva a Mavi de su historia y a Gabriela de la posibilidad de elaborar su duelo.</p>
+      </div>
+      <div class="personaje-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="personaje-avatar av-herencia">📦</div>
+        <h4>Mateo</h4>
+        <p class="personaje-role">El guardián de la memoria</p>
+        <p>Hereda el dolor de Antonia y de Nardo pero elige transmitirlo de manera que pueda ser procesado. Guarda los recortes, entrega el diario, abre el cajón. Entiende que el dolor heredado solo puede transformarse si se lo mira de frente.</p>
+      </div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card herencia" data-aos="fade-up" data-aos-delay="100">
+        <span class="card-icon">🕰️</span>
+        <h3>El tiempo</h3>
+        <p>En los 80 el dolor es agudo e inmediato. En el 98 se ha sedimentado: Gabriela lleva dieciséis años cargándolo y Mavi ha crecido dentro de él. El viaje a Maipú es el primer momento en que esa sedimentación empieza a removerse.</p>
+      </div>
+      <div class="card herencia" data-aos="fade-up" data-aos-delay="150">
+        <span class="card-icon">🎭</span>
+        <h3>Narrador y perspectiva</h3>
+        <p>La polifonía narrativa es clave: la herencia del dolor solo puede entenderse escuchando todas las voces. El narrador focalizado en Mavi permite ver cómo el dolor de la generación anterior llega a la siguiente de maneras no siempre evidentes.</p>
+      </div>
+      <div class="card herencia" data-aos="fade-up" data-aos-delay="200">
+        <span class="card-icon">🗝️</span>
+        <h3>Núcleo narrativo clave</h3>
+        <p>La confesión de Jorge de que Nardo nunca supo de Mavi: el dolor deja de ser solo de Gabriela y se convierte también en el de Mavi. Y la escena final en Darwin, donde Gabriela pone las manos en el pecho ante las tumbas sin nombre.</p>
+      </div>
+    </div>
+
+    <div class="quote-block" data-aos="fade-up">
+      <blockquote>"Lo que no puedo perdonarme es no haberle dicho a tu padre de tu existencia."</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- EL TIEMPO -->
+<section class="topico-section" id="tiempo" style="background:#f0ebe4;">
+  <div class="topico-inner">
+    <div class="topico-header">
+      <div class="topico-number" data-aos="fade-right">04</div>
+      <div class="topico-header-text">
+        <p class="subtitle" data-aos="fade-up">Estructura temporal</p>
+        <h2 data-aos="fade-up" data-aos-delay="100">De los 80 al 98</h2>
+      </div>
+    </div>
+
+    <p data-aos="fade-up" style="font-size:0.95rem;color:var(--dusk);max-width:700px;margin-bottom:3rem;line-height:1.9;">
+      La estructura temporal es en sí misma una declaración sobre cómo funciona la memoria. La novela salta continuamente entre 1998 y 1981-1982, y cada escena del pasado ilumina o complica el presente. El tiempo no curó nada, pero dio la distancia suficiente para intentar mirar.
+    </p>
+
+    <div class="timeline" data-aos="fade-up">
+      <div class="timeline-col">
+        <h4>Los años 80</h4>
+        <p>Tiempo de formación acelerada y pérdida irreparable. La Argentina de la dictadura saliente, la euforia del 2 de abril, la guerra, la derrota. El pueblo festeja sin entender, las madres tejen bufandas, y Mateo observa con una lucidez que nadie quiere escuchar. Todo ocurre en un período brevísimo que deja cicatrices permanentes.</p>
+      </div>
+      <div class="timeline-center">
+        <div class="timeline-dot"></div>
+        <div class="timeline-line"></div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-line"></div>
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-col">
+        <h4>El 98</h4>
+        <p>Tiempo del intento de cierre que no termina de cerrarse. Dieciséis años después, los restos siguen sin identificarse, las familias siguen sin respuestas, y el Estado sigue administrando el olvido. El contraste se refleja en los cuerpos: Jorge perdió una pierna, Gabriela perdió la juventud, y Mavi lleva en su nombre una historia que ocurrió antes de que naciera.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NARRADORES -->
+<section class="topico-section" id="narradores">
+  <div class="topico-inner">
+    <div class="topico-header">
+      <div class="topico-number" data-aos="fade-right">05</div>
+      <div class="topico-header-text">
+        <p class="subtitle" data-aos="fade-up">Construcción narrativa</p>
+        <h2 data-aos="fade-up" data-aos-delay="100">Narradores y perspectiva</h2>
+      </div>
+    </div>
+
+    <p data-aos="fade-up" style="font-size:0.95rem;color:var(--dusk);max-width:700px;margin-bottom:2.5rem;line-height:1.9;">
+      La novela construye su ética a través de múltiples voces, porque la historia de Malvinas no puede contarse desde una sola perspectiva sin traicionar su complejidad.
+    </p>
+
+    <div class="narrador-list">
+      <div class="narrador-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="narrador-num">I</div>
+        <div class="narrador-content">
+          <h4>Tercera persona · Focalización en Mavi</h4>
+          <p>Voz dominante del presente narrativo. Limitada y empática: sabe lo que Mavi sabe, siente lo que ella siente. El lector descubre la historia junto a Mavi, de a poco, a través de silencios que se van llenando.</p>
+        </div>
+      </div>
+      <div class="narrador-item" data-aos="fade-up" data-aos-delay="150">
+        <div class="narrador-num">II</div>
+        <div class="narrador-content">
+          <h4>Las cartas de Mavi a Nardo</h4>
+          <p>Primera persona íntima y confesional. El espacio donde confluyen los tres tópicos: el entorno militar visto desde sus consecuencias, la nostalgia como amor imposible, y el dolor examinado desde adentro. Escribir para alguien que no puede leer es ya en sí mismo una imagen de la melancolía.</p>
+        </div>
+      </div>
+      <div class="narrador-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="narrador-num">III</div>
+        <div class="narrador-content">
+          <h4>Tercera persona · Focalización en Gabriela (pasado)</h4>
+          <p>Los capítulos del pasado adoptan esta voz, dándole a Gabriela autonomía narrativa. Su historia no es solo lo que Mavi reconstruye, sino algo que el lector puede ver directamente, con sus contradicciones y su humanidad.</p>
+        </div>
+      </div>
+      <div class="narrador-item" data-aos="fade-up" data-aos-delay="250">
+        <div class="narrador-num">IV</div>
+        <div class="narrador-content">
+          <h4>Voces documentales</h4>
+          <p>Comunicados de radio, titulares de diarios y testimonios de Jorge anclan la ficción en la historia real. Esta multiplicidad reproduce la confusión informativa que vivieron las familias y subraya que la verdad oficial nunca coincidió con la verdad vivida.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NÚCLEOS NARRATIVOS -->
+<section class="topico-section" id="nucleos" style="background:#f0ebe4;">
+  <div class="topico-inner">
+    <div class="topico-header">
+      <div class="topico-number" data-aos="fade-right">06</div>
+      <div class="topico-header-text">
+        <p class="subtitle" data-aos="fade-up">Análisis narrativo</p>
+        <h2 data-aos="fade-up" data-aos-delay="100">Núcleos narrativos relevantes</h2>
+      </div>
+    </div>
+
+    <div class="nucleos-grid">
+      <div class="nucleo-card n1" data-aos="fade-up" data-aos-delay="100">
+        <h4>📔 La entrega del diario</h4>
+        <p>Mateo le da a Mavi el diario que Nardo escribió en Malvinas. Por primera vez tiene algo con la letra de su padre, su voz, su presencia física. Es el detonante de la trama profunda.</p>
+      </div>
+      <div class="nucleo-card n2" data-aos="fade-up" data-aos-delay="150">
+        <h4>💬 La confesión de Jorge</h4>
+        <p>Nardo nunca supo de la existencia de Mavi. Esta revelación redefine todo: el dolor de Gabriela, la identidad de Mavi, el silencio de diecisiete años. El mayor quiebre emocional del presente narrativo.</p>
+      </div>
+      <div class="nucleo-card n3" data-aos="fade-up" data-aos-delay="200">
+        <h4>🔥 La noche junto al fuego</h4>
+        <p>Mavi llora por primera vez frente a alguien. La nostalgia finalmente liberada. Ernesto la abraza sin decir nada, y en ese silencio la herencia del dolor empieza a transformarse en algo que puede ser compartido.</p>
+      </div>
+      <div class="nucleo-card n1" data-aos="fade-up" data-aos-delay="250">
+        <h4>📰 El periódico sobre los restos</h4>
+        <p>La desinformación oficial convierte el duelo privado en un laberinto público. Los datos se contradicen, la familia queda atrapada en una incertidumbre que el Estado podría resolver pero elige no resolver.</p>
+      </div>
+      <div class="nucleo-card n2" data-aos="fade-up" data-aos-delay="300">
+        <h4>✈️ La partida de los soldados</h4>
+        <p>Madres que lloran abrazando a hijos asustados, el pueblo festejando. Emilio no abraza a Gabriela. La euforia y la tragedia en simultáneo: la contradicción central del entorno militar condensada en una escena.</p>
+      </div>
+      <div class="nucleo-card n4" data-aos="fade-up" data-aos-delay="350">
+        <h4>🕊️ El cementerio de Darwin</h4>
+        <p>Madre e hija llegan juntas al lugar donde todo terminó. Mavi tira la carta al mar y lee en una tumba sin nombre la frase que define el libro. El cierre simbólico de todos los tópicos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMORIA HISTÓRICA -->
+<section id="memoria">
+  <div class="topico-inner">
+    <div class="topico-header" style="margin-bottom:3rem;">
+      <div class="topico-number" data-aos="fade-right" style="color:rgba(196,181,165,0.2);">07</div>
+      <div class="topico-header-text">
+        <span class="subtitle" data-aos="fade-up">Dimensión política y social</span>
+        <h2 data-aos="fade-up" data-aos-delay="100">Reivindicación de la memoria histórica</h2>
+      </div>
+    </div>
+
+    <p data-aos="fade-up" style="font-size:0.95rem;color:var(--stone);max-width:700px;margin-bottom:3rem;line-height:1.9;">
+      La Argentina que retrata la novela festejó una guerra sin entenderla, envió jóvenes sin abrigos ni instrucción, no identificó a sus muertos durante décadas, y cuando encontró restos decidió no hacer el ADN. La ignorancia no es inocente: es producida activamente.
+    </p>
+
+    <div class="memoria-grid">
+      <div class="memoria-card" data-aos="fade-up" data-aos-delay="100">
+        <span class="icon">🦿</span>
+        <h4>Secuelas físicas</h4>
+        <p>La pierna de Jorge como archivo vivo de la guerra. El cuerpo como territorio donde la historia deja su marca más literal e irreversible.</p>
+      </div>
+      <div class="memoria-card" data-aos="fade-up" data-aos-delay="150">
+        <span class="icon">🧠</span>
+        <h4>Secuelas psicológicas</h4>
+        <p>El duelo interminable de Gabriela, el trauma no elaborado de los excombatientes. Dieciséis años sin poder avanzar emocionalmente.</p>
+      </div>
+      <div class="memoria-card" data-aos="fade-up" data-aos-delay="200">
+        <span class="icon">👨‍👩‍👧</span>
+        <h4>Secuelas familiares</h4>
+        <p>La generación de Mavi creció sin padre y sin historia. La guerra destruyó familias antes de que pudieran existir del todo.</p>
+      </div>
+      <div class="memoria-card" data-aos="fade-up" data-aos-delay="250">
+        <span class="icon">🏛️</span>
+        <h4>Secuelas institucionales</h4>
+        <p>El Estado decide no hacer el ADN. La decisión más silenciosa y más feroz: administrar el olvido con la misma eficiencia con que se administró la guerra.</p>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:2.5rem;margin-bottom:2rem;" data-aos="fade-up">
+      <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--sand);margin-bottom:1.2rem;">La memoria como acto de resistencia</h4>
+      <p style="color:var(--stone);font-size:0.9rem;line-height:1.9;">Frente al olvido institucional, la novela propone tres gestos concretos: Mateo guarda los recortes. Mavi escribe la carta más larga de su vida. Gabriela va a Malvinas para pedirle perdón a Nardo. Estas acciones no cambian la historia, pero la inscriben en el cuerpo de quienes la vivieron y en los que la heredaron.</p>
+    </div>
+
+    <div class="final-quote" data-aos="fade-up">
+      <blockquote>"Acá yace un soldado del que solo Dios sabe su nombre."</blockquote>
+      <br>
+      <blockquote style="font-size:1.2rem;margin-top:1rem;">Caminar en Malvinas es como nadar de pie…</blockquote>
+      <cite>— Mavi, última entrada · Nadar de pie</cite>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Análisis literario · <em>Nadar de pie</em> — Sandra Comino &nbsp;·&nbsp; Literatura Argentina</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 700,
+    easing: 'ease-out-cubic',
+    once: true,
+    offset: 60
+  });
+
+  // Smooth active nav link
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(link => {
+      link.style.background = '';
+      link.style.color = '';
+      if (link.getAttribute('href') === '#' + current) {
+        link.style.background = 'var(--sand)';
+        link.style.color = 'var(--earth)';
+      }
+    });
+  });
+</script>
+</body>
+</html>
